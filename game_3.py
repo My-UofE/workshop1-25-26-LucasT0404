@@ -32,7 +32,7 @@ def play_game_3(n_lives=10):
         letter = ""
         while (len(letter) != 1) or (letter not in "abcdefghijklmnopqrstuvwxyz"):
             letter = input("Enter a letter (a-z)\n> ")
-    
+
         letters_guessed.append(letter.lower())
         result = process_guess(letter, board, word)
         if result == False:
